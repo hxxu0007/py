@@ -1,0 +1,15 @@
+Here is the list you should complete in Week 1.
+In this week, we will set up the coding environment, including Anaconda3 and Visual Studio Code. And also, we will use the GitHub Repository for your programming assignments.
+After completion of setting up your coding environment, you have to finish two quizzes and a warming-up programming assignment to see if your environment is working fine.
+Make sure that you have read all the slides on the pages of the Canvas.
+Completion of the installation of software
+Anaconda3
+VS Code
+Due date: Jun 14
+[Quiz 00] Check up on the installation 
+[Quiz 01] GitHub and Git Command
+[Assignment 0-1] Introductory Activity: Submit your program to Github Classroom Repository Through VS Code
+
+hash for installer from webAnaconda3-2024.02-1-Windows-x86_64.exe:                087c633e355bc709222ad9e0dbad77abeed84f7e06dbdbecae84ba8b3660429e
+Get-FileHash .\Downloads\Anaconda3-2024.02-1-Windows-x86_64.exe -Algorithm SHA256 087C633E355BC709222AD9E0DBAD77ABEED84F7E06DBDBECAE84BA8B3660429E
+

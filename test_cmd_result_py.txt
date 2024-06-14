@@ -1,0 +1,74 @@
+py C:\Users\Jonny\Documents\LPC\cs07-intro-compu-progaming-python-summer-24\pythonSample.py
+----------------
+First python!
+----------------
+First python!
+
+in windows terminal: py --version, conda info, code .
+
+if not recognized, open anaconda terminal:
+(base) C:\Users\Jonny>where conda and where python
+C:\Users\Jonny\anaconda3\Library\bin\conda.bat
+C:\Users\Jonny\anaconda3\Scripts\conda.exe
+C:\Users\Jonny\anaconda3\condabin\conda.bat
+(base) C:\Users\Jonny>where python
+C:\Users\Jonny\anaconda3\python.exe
+C:\Users\Jonny\AppData\Local\Microsoft\WindowsApps\python.exe
+Then add these path to the system path-->user&system path-->new-->move all up
+Then restart windows.
+
+Create python program the first time:
+ctrl+k, ctrl+o to open a folder, click plus on the right of the opened folder on the VScode left panel.
+This will create new file, create the file name with .py, click view-->Command Paletter-->Python: Select Interpreter
+This is only for the first time-->choose the interpreter from anaconda.
+Then you can click run button on the right corner, left panel or run "python test.py" from terminal:
+ py -u "/Users/Jonny/Documents/LPC/cs07-intro-compu-progaming-python-summer-24/py/test.py" or
+ py -u "C:/Users/Jonny/Documents/LPC/cs07-intro-compu-progaming-python-summer-24/py/test.py" but
+it'll not work when the path start with /Jonny/
+After that you can click file, 'save workspace as' for future usage, next time double click the file will start VScode.
+Click plus on the left panel to new a file, test.ipynb-->jupyter notebook file, on the text, use b to open another paragraph.
+
+git installation and launch the git bash interface:
+acco for github-->hxxu0007@zonemail.clpccd.edu/Wireless*1234  user.name:hxxu0007
+git add: adds your modified files to the queue to be committed later. Files are not committed
+git commit: commits the files that have been added and creates a new revision with a log... 
+If you do not add any files, git will not commit anything. You can combine both actions with "git commit -a"
+git push: pushes your changes to the remote repository.
+steps:
+git --version
+git help config/git config --help  -->get the manual
+mkdir test, cd test  --make a directory in master
+git init             --initialize the directory
+new text document-->demo.txt  --create a text file in the dir
+git status           --the file created but not tracked yet
+git add demo.txt     --track the file, commit later
+git commit -m "Adding text file"   --the file(s) added is(are) committed with a new revision and log
+
+git config --global user.username  "your username from github"  --link ur local git to a github account
+create repo in remote github, copy the URL link of the repo
+git remote add origin "the URL link of the repo"  --link the local repo to the remote repo
+git push origin master                        --push the committed file(s) to remote repo in github
+***good ref doc: https://longair.net/blog/2009/04/16/git-fetch-and-merge/
+
+if clone the repo from the remote github, no need to config&link first:
+after opened VScode, click "Clone Git repository", fill the cursored line with your remote github repo link,
+select the local folder where the remote repo clone to, then open this folder in VScode, create a python file 
+in the folder, then click plus sign to stage/add it to the backlog, then click the check sign with a message 
+to commit it, then push the local created file(already staged/added and committed) to the remote repo by clicking
+"Sync Changes" with above message filled(or not).
+security issue:
+make sure the user.name and user.email is correct: "git config --list/git config user.name/git config user.email"
+to check, git config user.name hxxu0007/git config user.email "hxxu0007@zonemail.clpccd.edu" or vi ~/.gitconfig 
+to change it.
+***if "git push" complained security/pwd issue, open windows credential manager, delete the pwd of github, goes to github
+account-->setting-->developer setting-->generate new token-->select repo-->copy the token-->this will be the password
+for the next "git push" after entered username, only one time is fine, this token you can specify time of live, e.g.
+30 days~no expiration.
+**view the changes in VScode-->file explorer-->timeline. view the changes in github: open file, right corner click
+history tab. view all commits: in the repo, click commits tab below code.
+
+ProgramDat folder:
+This directory contains application data for all users. This folder is used for application data that is not 
+user-specific. This information will not roam and is available to anyone using the computer.
+Dr. Lee's yuotube video of creating python file from VScode, the anaconda3/python.exe is in C:\ProgramData folder, 
+mine is in user\Jonny\anaconda3\python.exe, may be due to the installation option: install for all users?
